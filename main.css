@@ -65,11 +65,6 @@ header {
   text-transform: uppercase;
 }
 
-/* .nav-container {
-  justify-content: center;
-  align-items: center;
-} */
-
 @media screen and (min-width: 576px) {
   .flex {
     align-items: center;
