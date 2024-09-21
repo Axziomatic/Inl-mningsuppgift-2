@@ -6,6 +6,10 @@
   --clr-bg-default: #000000;
 }
 
+* {
+  outline: crimson solid 1px;
+}
+
 body {
   font-family: var(--ff-default);
   color: var(--clr-text-default);
@@ -25,12 +29,25 @@ header > h2 {
 }
 
 .wrapper {
-  width: min(100% - 2rem, 1000px);
+  width: min(100%, 1000px);
   margin-inline: auto;
 }
 
-header {
+header, footer {
   padding: var(--gap);
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.125em;
+  color: var(--clr-text-default);
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.icon:hover {
+  opacity: 1;
 }
 
 .quicksand-slim {
