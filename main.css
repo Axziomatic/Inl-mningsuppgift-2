@@ -1,6 +1,6 @@
 :root {
+  font-size: clamp(100%, 90% + 0.5vi, 150%);
   --ff-default: "Quicksand", sans-serif;
-  
   --font-size-4xl: 3.999rem;
   --font-size-3xl: 2.999rem;
   --font-size-2xl: 2rem;
@@ -10,7 +10,9 @@
 
   --clr-text-default: #dee2e6;
   --clr-bg-default: #000000;
-  --gap: 1rem;
+  
+  --gap: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+  --line-length: 70ch;
 }
 
 img, svg {
@@ -18,26 +20,39 @@ img, svg {
   height: auto;
   vertical-align: middle;
   font-style: italic;
+  margin-inline: auto;
+  border-radius: 0.25em;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
-  line-height: 1;
+  line-height: 1.1;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  margin-bottom: var(--gap);
 }
 
 h1 {
-  font-size: var(--font-size-4xl);
+  font-size: var(--font-size-3xl);
 }
 
 h1 span {
   font-size: var(--font-size-xl);
-  font-weight: 400;
-  line-height: 1;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 0.25em;
+  display: block;
 }
 
 p {
+  font-size: var(--font-size-lg);
   text-wrap: pretty;
-  line-height: 1.5;
+  line-height: 1.4;
+  max-width: var(--line-length);
+  margin-block: var(--gap);
 }
 
 body {
@@ -48,7 +63,7 @@ body {
 }
 
 .wrapper {
-  width: min(100% - 2rem, 1000px);
+  width: min(100% - 2rem, 1100px);
   margin-inline: auto;
 }
 
@@ -63,8 +78,8 @@ header > h2 {
   margin-bottom: var(--gap);
 }
 
-header {
-  padding: var(--gap);
+header, main {
+  padding: var(--gap) 0;
 }
 
 .quicksand-slim {
@@ -137,5 +152,12 @@ header {
   }
   .nav-item {
     width: fit-content;
+  }
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+  .wrapper {
+    width: min(100% - 4rem, 1100px);
+    margin-inline: auto;
   }
 }
