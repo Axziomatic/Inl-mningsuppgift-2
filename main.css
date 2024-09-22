@@ -142,6 +142,41 @@ header, main {
   text-transform: uppercase;
 }
 
+.main-nav-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.event-container {
+  background-image: url(/images/open-stage-2023_650.jpg);
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-image1 {
+  background-image: url(/images/open-stage-2023_650.jpg);
+}
+.event-image2 {
+  background-image: url(/images/PUNK-NUN_650.jpg);
+}
+.event-image3 {
+  background-image: url(/images/WB_gbg_hi_650.jpg);
+}
+.event-image4 {
+  background-image: url(/images/the-shivas-650-x-300-px.png);
+}
+.event-image5 {
+  background-image: url(/images/thaiconcert_650.jpg);
+}
+.event-image6 {
+  background-image: url(/images/Musikens-Hus-40-ar650-x-300-px-1170x400.png);
+}
+
 .navbar-toggler {
   border: 1px solid var(--clr-text-default);
   border-radius: 0.25rem;
