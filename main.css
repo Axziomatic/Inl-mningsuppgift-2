@@ -1,9 +1,83 @@
 :root {
+  font-size: clamp(100%, 90% + 0.5vi, 150%);
   --ff-default: "Quicksand", sans-serif;
-  --gap: 1rem;
+  --font-size-4xl: 3.999rem;
+  --font-size-3xl: 2.999rem;
+  --font-size-2xl: 2rem;
+  --font-size-xl: 1.666rem;
+  --font-size-lg: 1.166rem;
+  --font-size-md: 1rem;
 
   --clr-text-default: #dee2e6;
   --clr-bg-default: #000000;
+  
+  --gap: clamp(0.375rem, 0.3315rem + 0.2174vw, 0.5rem);
+  --line-length: 70ch;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  margin-inline: auto;
+  border-radius: 0.15em;
+}
+
+img.article {
+  display: block;
+  margin-block: var(--gap);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  line-height: 1.1;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  margin-bottom: var(--gap);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+}
+
+h1 span {
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 0.25em;
+  display: block;
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+}
+
+h6 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  font-size: var(--font-size-lg);
+  text-wrap: pretty;
+  line-height: 1.4;
+  max-width: var(--line-length);
+  margin-bottom: calc(var(--gap) * 2);
 }
 
 body {
@@ -11,6 +85,11 @@ body {
   color: var(--clr-text-default);
   background-color: var(--clr-bg-default);
   margin: 0;
+}
+
+.wrapper {
+  width: min(100% - 2rem, 1100px);
+  margin-inline: auto;
 }
 
 header > h2 {
@@ -24,13 +103,8 @@ header > h2 {
   margin-bottom: var(--gap);
 }
 
-.wrapper {
-  width: min(100% - 2rem, 1000px);
-  margin-inline: auto;
-}
-
-header {
-  padding: var(--gap);
+header, main {
+  padding: var(--gap) 0;
 }
 
 .quicksand-slim {
@@ -68,49 +142,6 @@ header {
   text-transform: uppercase;
 }
 
-/* .kitchen-link {
-  width: 50vw;
-}
-
-.studio-link {
-  max-width: 50vw;
-} */
-
-.main-nav-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.event-container {
-  background-image: url(/images/open-stage-2023_650.jpg);
-  height: 100px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.event-image1 {
-  background-image: url(/images/open-stage-2023_650.jpg);
-}
-.event-image2 {
-  background-image: url(/images/PUNK-NUN_650.jpg);
-}
-.event-image3 {
-  background-image: url(/images/WB_gbg_hi_650.jpg);
-}
-.event-image4 {
-  background-image: url(/images/the-shivas-650-x-300-px.png);
-}
-.event-image5 {
-  background-image: url(/images/thaiconcert_650.jpg);
-}
-.event-image6 {
-  background-image: url(/images/Musikens-Hus-40-ar650-x-300-px-1170x400.png);
-}
-
 .navbar-toggler {
   border: 1px solid var(--clr-text-default);
   border-radius: 0.25rem;
@@ -121,7 +152,26 @@ header {
 }
 
 .navbar-toggler:focus-visible {
-  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, .5);
+}
+
+.menu h3 {
+  border-bottom: crimson dashed 2px;
+  padding-block-end: 5px;
+}
+
+.menu h4 {
+  font-weight: 300;
+}
+
+.menu h4 span {
+  font-weight: 700;
+  margin-left: calc(var(--gap) * 2);
+}
+
+.menu h4 span:after {
+  content: "\006B\0072";
+  margin-left: calc(var(--gap) / 2);
 }
 
 @media screen and (min-width: 576px) {
@@ -146,5 +196,12 @@ header {
   }
   .nav-item {
     width: fit-content;
+  }
+  h1 {
+    font-size: var(--font-size-4xl);
+  }
+  .wrapper {
+    width: min(100% - 4rem, 1100px);
+    margin-inline: auto;
   }
 }
