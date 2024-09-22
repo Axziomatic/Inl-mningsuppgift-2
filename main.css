@@ -22,7 +22,6 @@ img, svg {
   font-style: italic;
   margin-inline: auto;
   border-radius: 0.15em;
-  object-fit: cover;
 }
 
 img.article {
@@ -158,6 +157,7 @@ header, main {
 
 .menu h3 {
   border-bottom: crimson dashed 2px;
+  padding-block-end: 5px;
 }
 
 .menu h4 {
