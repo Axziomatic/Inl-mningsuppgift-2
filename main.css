@@ -99,7 +99,7 @@ body {
 }
 
 header > h2 {
-  font-size: clamp(1.75rem, 0.6662rem + 4.6243vw, 4.25rem);
+  font-size: clamp(1.75rem, 1.2283rem + 2.6087vw, 3.25rem);
   font-weight: 700;
   text-transform: uppercase;
   border-block: 0.2em dotted;
@@ -107,6 +107,11 @@ header > h2 {
   max-width: fit-content;
   margin-inline: auto;
   margin-bottom: var(--gap);
+}
+
+header a.logo-title {
+  text-decoration: none;
+  color: var(--clr-text-default);
 }
 
 header {
