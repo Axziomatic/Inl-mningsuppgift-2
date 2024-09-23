@@ -1,8 +1,8 @@
 ﻿# Inlämningsuppgift 2
 ## Uppgiften i korthet
-Uppdatera och style om vald sida så den blir tillgänglig med hjälp av HTML, CSS och Javascript.
+Uppdatera och sätta ny style på vald sida så den blir tillgänglig.
 ## Musikens hus
-Vi valde [Musikens hus](https://www.musikenshus.se/) som hemsida och använde oss av två media queries. Koden är mobil i grunden och sedan lade vi en media query ```min-width: 576px``` för tablet och uppåt och en media query ```min-width: 768px``` för desktop och uppåt.
+Vi valde [Musikens hus](https://www.musikenshus.se/) som hemsida och använde oss av två media queries. Koden är mobil i grunden och sedan lade vi en media query ```min-width: 576px``` för tablet och uppåt och en media query ```min-width: 768px``` för desktop och uppåt. Tekniker vi använde: Bootstrap, HTML och CSS.
 ## Utmaningar
 ### Förkylning
 Första stora utmaningen var att Peter åkte på en förkylning precis i början på projektet vilket lämnade Jim ensam att hantera de initiala uppdgifterna, till exempel att sätta upp repo, skapa branches, basic style för projeket och specifikt för header och navigering. Jim löste detta med bravur (enligt Peter) och det gjorde det väldigt smidigt för Peter att hoppas in i projeket igen.
