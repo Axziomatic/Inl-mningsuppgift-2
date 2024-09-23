@@ -157,38 +157,50 @@ main {
   padding-bottom: 5px;
 }
 
+.carousel-item {
+  height: 80vh;
+}
+
 .carousel-img {
   object-fit: cover;
-  height: 600px;
+  height: 100%;
   max-width: 100%;
   display: block;
 }
 
+.accordion-item {
+  background-color: black;
+}
+
 .event-container {
-  background-image: url(/images/open-stage-2023_650.jpg);
-  height: 100px;
+  min-height: 40vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.event-text {
+  color: var(--clr-text-default);
+  font-family: var(--ff-default);
+}
+
 .event-image1 {
-  background-image: url(/images/open-stage-2023_650.jpg);
+  background-image: url(/images/kamasi2.jpg);
 }
 .event-image2 {
-  background-image: url(/images/PUNK-NUN_650.jpg);
+  background-image: url(/images/tigran400.jpg);
 }
 .event-image3 {
-  background-image: url(/images/WB_gbg_hi_650.jpg);
+  background-image: url(/images/agnesobel2_400.jpg);
 }
 .event-image4 {
-  background-image: url(/images/the-shivas-650-x-300-px.png);
+  background-image: url(/images/cultofluna.jpg);
 }
 .event-image5 {
-  background-image: url(/images/thaiconcert_650.jpg);
+  background-image: url(/images/littlesimz.jpg);
 }
 .event-image6 {
-  background-image: url(/images/Musikens-Hus-40-ar650-x-300-px-1170x400.png);
+  background-image: url(/images/littlesimz.jpg);
 }
 
 .navbar-toggler {
