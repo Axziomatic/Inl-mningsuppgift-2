@@ -276,22 +276,22 @@ header a.logo-title:hover {
 }
 
 .event-image1 {
-  background-image: url(/images/kamasi2.jpg);
+  background-image: url(images/kamasi2.webp);
 }
 .event-image2 {
-  background-image: url(/images/tigran400.jpg);
+  background-image: url(images/tigran400.webp);
 }
 .event-image3 {
-  background-image: url(/images/agnesobel2_400.jpg);
+  background-image: url(images/agnesobel2_400.webp);
 }
 .event-image4 {
-  background-image: url(/images/cultofluna.jpg);
+  background-image: url(images/cultofluna.webp);
 }
 .event-image5 {
-  background-image: url(/images/littlesimz.jpg);
+  background-image: url(images/littlesimz.webp);
 }
 .event-image6 {
-  background-image: url(/images/littlesimz.jpg);
+  background-image: url(images/littlesimz.webp);
 }
 
 .navbar-toggler {
