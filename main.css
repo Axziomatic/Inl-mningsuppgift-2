@@ -262,6 +262,14 @@ header a.logo-title:hover {
   left: var(--gap);
 }
 
+.event-text > h2 {
+  font-size: var(--font-size-2xl);
+}
+
+.event-text > h3 {
+  font-size: var(--font-size-lg);
+}
+
 .event-image {
   width: 100%;
   height: 100%;
