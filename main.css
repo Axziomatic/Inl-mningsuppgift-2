@@ -1,3 +1,5 @@
+@import url(wrapper.css);
+
 :root {
   font-size: clamp(100%, 90% + 0.5vi, 150%);
   --ff-default: "Quicksand", sans-serif;
@@ -103,11 +105,6 @@ body {
   color: var(--clr-text-default);
   background-color: var(--clr-bg-default);
   margin: 0;
-}
-
-.wrapper {
-  width: min(100% - 2rem, 1100px);
-  margin-inline: auto;
 }
 
 header > h2 {
@@ -371,10 +368,6 @@ header a.logo-title:hover {
   }
   h1 {
     font-size: var(--font-size-4xl);
-  }
-  .wrapper {
-    width: min(100% - 4rem, 1100px);
-    margin-inline: auto;
   }
   .kitchen-studio-container {
     flex-direction: row;
