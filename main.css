@@ -109,9 +109,39 @@ header > h2 {
   margin-bottom: var(--gap);
 }
 
-header,
-main {
-  padding: var(--gap) 0;
+header {
+  padding: var(--gap);
+}
+
+footer {
+  padding: var(--gap) var(--gap) calc(var(--gap) * 4);
+}
+
+address {
+  margin-bottom: 0;
+}
+
+.social-icon {
+  width: 2em;
+  height: 2em;
+  vertical-align: -0.125em;
+  color: var(--clr-text-default);
+  background-color: transparent;
+  opacity: 0.7;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px white);
+}
+
+.svg-icon {
+  text-decoration: none;
+}
+
+.svg-icon + .svg-icon {
+  margin-left: var(--gap);
 }
 
 .quicksand-slim {
@@ -230,6 +260,9 @@ main {
   .nav-item {
     width: 50%;
   }
+  .footer.flex {
+    align-items: flex-start;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -245,6 +278,11 @@ main {
   }
   .nav-item {
     width: fit-content;
+  }
+  .footer.flex {
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: initial;
   }
   h1 {
     font-size: var(--font-size-4xl);
