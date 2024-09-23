@@ -19,7 +19,12 @@
 hr.gradient {
   border: 0;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), var(--clr-accent), rgba(255, 255, 255, 0.2));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.2),
+    var(--clr-accent),
+    rgba(255, 255, 255, 0.2)
+  );
 }
 
 img,
@@ -113,17 +118,25 @@ header > h2 {
   padding-inline: 0.5em;
   max-width: fit-content;
   margin-inline: auto;
-  margin-bottom: var(--gap);
+  margin-block: calc(var(--gap) * 2.5);
 }
 
 header a.logo-title {
   text-decoration: none;
   color: var(--clr-text-default);
-  transition: all 0.4s ease-in-out;
+  transition: filter 0.4s ease-in-out;
 }
 
 header {
   padding: var(--gap);
+}
+
+.event-wrapper {
+  padding: calc(var(--gap) * 2) 0;
+}
+
+.event-container + .event-container {
+  margin-top: var(--gap);
 }
 
 footer {
@@ -193,14 +206,32 @@ header a.logo-title:hover {
   text-transform: uppercase;
 }
 
-.main-nav-img {
-  max-width: 100%;
+.main-nav-link {
   height: auto;
-  display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16/6;
 }
 
+.main-nav-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 0.15em;
+  transition: all 0.5s;
+  object-fit: cover;
+}
+
+.kitchen-studio-container {
+  border-radius: 0.15em;
+}
+
+.main-nav-link:hover .main-nav-img,
+.main-nav-link:focus .main-nav-img {
+  transform: scale(1.1);
+}
 .carousel-item {
   height: 80vh;
 }
@@ -212,20 +243,36 @@ header a.logo-title:hover {
   display: block;
 }
 
-.accordion-item {
-  background-color: black;
-}
-
 .event-container {
-  min-height: 40vh;
+  height: 40vh;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0.15em;
+  overflow: hidden;
+  position: relative;
 }
 
 .event-text {
   color: var(--clr-text-default);
   font-family: var(--ff-default);
+  position: absolute;
+  top: var(--gap);
+  left: var(--gap);
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.event-container:hover .event-image,
+.event-container:focus .event-image {
+  transform: scale(1.1);
 }
 
 .event-image1 {
@@ -252,8 +299,8 @@ header a.logo-title:hover {
   border-radius: 0.25rem;
   padding: 0.5em;
   position: absolute;
-  top: var(--gap);
-  left: var(--gap);
+  top: 1.25rem;
+  left: 1rem;
 }
 
 .navbar-toggler:focus-visible {
@@ -277,6 +324,10 @@ header a.logo-title:hover {
 .menu h4 span:after {
   content: "\006B\0072";
   margin-left: calc(var(--gap) / 2);
+}
+
+.kitchen-studio-container {
+  flex-direction: column;
 }
 
 @media screen and (min-width: 576px) {
@@ -316,5 +367,8 @@ header a.logo-title:hover {
   .wrapper {
     width: min(100% - 4rem, 1100px);
     margin-inline: auto;
+  }
+  .kitchen-studio-container {
+    flex-direction: row;
   }
 }

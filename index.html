@@ -106,7 +106,7 @@
                   class="d-block w-100 carousel-img"
                   alt="carousel slide 1"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                   <h5>KAMASI WASHINGTON</h5>
                   <p>27/9</p>
                 </div>
@@ -117,7 +117,7 @@
                   class="d-block w-100 carousel-img"
                   alt="carousel slide 2"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                   <h5>TIGRAN HAMAYSAN</h5>
                   <p>28/9</p>
                 </div>
@@ -128,7 +128,7 @@
                   class="d-block w-100 carousel-img"
                   alt="carousel slide 3"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                   <h5>AGNES OBEL</h5>
                   <p>04/10</p>
                 </div>
@@ -139,7 +139,7 @@
                   class="d-block w-100 carousel-img"
                   alt="carousel slide 4"
                 />
-                <div class="carousel-caption d-none d-md-block">
+                <div class="carousel-caption">
                   <h5>CULT OF LUNA</h5>
                   <p>05/10</p>
                 </div>
@@ -171,9 +171,11 @@
             </button>
           </div>
         </div>
+        <!-- END CAROUSEL -->
+        <!-- NAV IMAGES -->
         <div class="flex kitchen-studio-container">
-          <div class="kitchen-link">
-            <a href="#">
+          <div class="main-nav-link">
+            <a href="kok-och-bar.html">
               <img
                 src="/images/KOK-BAR.png"
                 alt="kök och bar"
@@ -181,7 +183,7 @@
               />
             </a>
           </div>
-          <div class="studio-link">
+          <div class="main-nav-link">
             <a href="#">
               <img
                 src="/images/STUDIO.png"
@@ -191,49 +193,73 @@
             </a>
           </div>
         </div>
-        <!-- ACCORDION -->
-        <div class="accordion" id="calendarAccordion">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="#collapseOne"
-              >
-                EVENTS
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#calendarAccordion"
-            >
-              <div class="accordion-body">
-                <div class="event-container event-image1">
-                  <h3>GÖTEBORG OPEN STAGE</h3>
-                  <p>19/9</p>
-                </div>
-                <div class="event-container event-image2">
-                  <h3>PINK NUN + BF/C</h3>
-                  <p>20/9</p>
-                </div>
-                <div class="event-container event-image3">
-                  <h3>WOLFBRIGADE</h3>
-                  <p>21/9</p>
-                </div>
-                <div class="event-container event-image4">
-                  <h3>THAICONSERTS IN EUROPE</h3>
-                  <p>21/9</p>
-                </div>
-                <div class="event-container event-image5">
-                  <h3>40 ÅRS JUBEL: BARNMATTAN</h3>
-                  <p>23/9</p>
-                </div>
+      </section>
+      <!-- END NAV IMAGES -->
+      <section class="wrapper">
+        <h1 class="quicksand-bold">
+          Musikens Hus, ett Grönt Kulturhus
+          <span>Fyllt av levande musik och god mat – mitt i Majorna</span>
+        </h1>
+        <p>
+          Majornas kulturcentrum med två barer, två scener och restaurangkök
+          specialiserade på god vegetarisk mat, bra musik och gott öl. Musikens
+          Hus slår upp portarna för dig som är sugen på riktigt bra
+          konsertupplevelser, med bra liveakter och DJ:s.
+        </p>
+        <p>
+          I huset finns två scener, en mindre i Hängmattan och en stor i
+          konsertlokalen. Här bjuds på artister från hela världen, festivaler
+          med inhemska och lokala band och klubbkvällar med DJ:s och liveband. I
+          Musikens Hus repar ca 70 band och du kan gå på kurs i till exempel
+          dans eller slagverk kvällar och helger.
+        </p>
+      </section>
+      <section class="wrapper">
+        <div class="event-wrapper">
+          <div class="event-container">
+            <a href="#">
+              <div class="event-image event-image1"></div>
+              <div class="event-text">
+                <h3>KAMASI WASHINGTON</h3>
+                <p>27/9</p>
               </div>
-            </div>
+            </a>
+          </div>
+          <div class="event-container">
+            <a href="#">
+              <div class="event-image event-image2"></div>
+              <div class="event-text">
+                <h3>TIGRAN HAMASYAN</h3>
+                <p>28/9</p>
+              </div>
+            </a>
+          </div>
+          <div class="event-container">
+            <a href="#">
+              <div class="event-image event-image3"></div>
+              <div class="event-text">
+                <h3>AGNES OBEL</h3>
+                <p>04/10</p>
+              </div>
+            </a>
+          </div>
+          <div class="event-container">
+            <a href="#">
+              <div class="event-image event-image4"></div>
+              <div class="event-text">
+                <h3>CULT OF LUNA</h3>
+                <p>05/10</p>
+              </div>
+            </a>
+          </div>
+          <div class="event-container">
+            <a href="#">
+              <div class="event-image event-image5"></div>
+              <div class="event-text">
+                <h3>LITTLE SIMZ</h3>
+                <p>11/10</p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -249,7 +275,9 @@
               aria-hidden="true"
               focusable="true"
               viewBox="0 0 448 512"
+              role="img"
             >
+              <title>Instagram</title>
               <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
               <path
                 fill="currentColor"
@@ -264,7 +292,9 @@
               aria-hidden="true"
               focusable="true"
               viewBox="0 0 640 512"
+              role="img"
             >
+              <title>Facebook</title>
               <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
               <path
                 fill="currentColor"
@@ -282,7 +312,9 @@
               aria-hidden="true"
               focusable="true"
               viewBox="0 0 576 512"
+              role="img"
             >
+              <title>Youtube</title>
               <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
               <path
                 fill="currentColor"
