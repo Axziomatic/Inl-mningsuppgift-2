@@ -95,7 +95,21 @@ body {
   margin: 0;
 }
 
-header > h2 {
+header {
+  padding: clamp(0.375rem, 0.3315rem + 0.2174vw, 0.5rem);
+}
+header .navbar-toggler {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 0.5em;
+  position: absolute;
+  top: 1.25rem;
+  left: 1rem;
+}
+header .navbar-toggler focus-visible {
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+header h2 {
   font-size: clamp(1.75rem, 1.2283rem + 2.6087vw, 3.25rem);
   font-weight: 700;
   text-transform: uppercase;
@@ -106,19 +120,14 @@ header > h2 {
   margin-inline: auto;
   margin-block: calc(clamp(0.375rem, 0.3315rem + 0.2174vw, 0.5rem) * 2.5);
 }
-
-header a.logo-title {
+header h2 a.logo-title {
   text-decoration: none;
   color: #dee2e6;
   transition: filter 0.4s ease-in-out;
 }
 
-header {
-  padding: clamp(0.375rem, 0.3315rem + 0.2174vw, 0.5rem);
-}
-
 .event-wrapper {
-  padding: calc(clamp(0.375rem, 0.3315rem + 0.2174vw, 0.5rem) * 2);
+  padding: calc(clamp(0.375rem, 0.3315rem + 0.2174vw, 0.5rem) * 2) 0;
 }
 
 .event-container + .event-container {
@@ -192,14 +201,16 @@ header a.logo-title:hover {
   text-transform: uppercase;
 }
 
-.main-nav-link {
+.kitchen-studio-container {
+  border-radius: 0.15em;
+}
+.kitchen-studio-container .main-nav-link {
   height: auto;
   width: 100%;
   overflow: hidden;
   aspect-ratio: 16/6;
 }
-
-.main-nav-img {
+.kitchen-studio-container .main-nav-link .main-nav-img {
   width: 100%;
   height: 100%;
   display: block;
@@ -243,6 +254,14 @@ header a.logo-title:hover {
   position: relative;
 }
 
+.event-container .event-image {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
 .event-text {
   color: #dee2e6;
   font-family: "Quicksand", sans-serif;
@@ -250,21 +269,11 @@ header a.logo-title:hover {
   top: clamp(0.375rem, 0.3315rem + 0.2174vw, 0.5rem);
   left: clamp(0.375rem, 0.3315rem + 0.2174vw, 0.5rem);
 }
-
-.event-text > h2 {
+.event-text h2 {
   font-size: 2rem;
 }
-
-.event-text > h3 {
+.event-text h3 {
   font-size: 1.166rem;
-}
-
-.event-image {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  transition: all 0.5s;
 }
 
 .event-container:hover .event-image,
@@ -304,8 +313,7 @@ header a.logo-title:hover {
   top: 1.25rem;
   left: 1rem;
 }
-
-.navbar-toggler:focus-visible {
+.navbar-toggler focus-visible {
   box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
 
