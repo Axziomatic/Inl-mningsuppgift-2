@@ -130,6 +130,7 @@ header {
     max-width: fit-content;
     margin-inline: auto;
     margin-block: calc(($gap) * 2.5);
+    
     a.logo-title {
       text-decoration: none;
       color: $clr-text-default;
@@ -138,80 +139,80 @@ header {
   }
 }
 
-.event-wrapper {
-  padding: calc(($gap) * 2) 0;
-}
+ 
+  .event-wrapper {
+    padding: calc(($gap) * 2);
+  }
+  
+  .event-container + .event-container {
+    margin-top: $gap;
+  }
+ 
+  footer {
+    padding: ($gap) ($gap)calc(($gap) * 4);  }
+  
+  address {
+    margin-bottom: 0;
+  }
+  
+  .social-icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.125em;
+    color: $clr-text-default;
+    background-color: transparent;
+    opacity: 0.7;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .social-icon:hover,
+  header a.logo-title:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px $clr-accent);
+  }
+  
+  .svg-icon {
+    text-decoration: none;
+  }
+  
+  .svg-icon + .svg-icon {
+    margin-left: ($gap);
+  }
 
-.event-container + .event-container {
-  margin-top: $gap;
-}
-
-footer {
-  padding: $gap $gap calc(($gap) * 4);
-}
-
-address {
-  margin-bottom: 0;
-}
-
-.social-icon {
-  width: 2em;
-  height: 2em;
-  vertical-align: -0.125em;
-  color: $clr-text-default;
-  background-color: transparent;
-  opacity: 0.7;
-  transition: all 0.4s ease-in-out;
-}
-
-.social-icon:hover,
-header a.logo-title:hover {
-  opacity: 1;
-  filter: drop-shadow(0 0 10px $clr-accent);
-}
-
-.svg-icon {
-  text-decoration: none;
-}
-
-.svg-icon + .svg-icon {
-  margin-left: $gap;
-}
-
-.quicksand-slim {
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.quicksand-medium {
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.quicksand-bold {
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.flex-gap {
-  gap: $gap;
-}
-
-.nav-item {
-  text-transform: uppercase;
-}
+  @mixin fontweight($fontweight: 300) {
+    font-optical-sizing: auto;
+    font-weight: $fontweight;
+    font-style: normal;
+  }
+ 
+  .quicksand-slim {
+    @include fontweight;
+  }
+  
+  .quicksand-medium {
+    @include fontweight($fontweight: 500);
+  }
+  
+  .quicksand-bold {
+    @include fontweight($fontweight: 700);
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .flex-gap {
+    gap: $gap;
+  }
+ 
+  .nav-item {
+    text-transform: uppercase;
+  }
 
 .kitchen-studio-container {
   border-radius: 0.15em;
